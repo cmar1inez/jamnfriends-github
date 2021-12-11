@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="MTIvMTAvMjAyMSBhdCA5OjI2QU0gLSBKYW0gJ24nIEZyaWVuZHM">
+  <title>Jam'n'Friends</title>
+
+  <!--JQuery cddn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--google fonts cdn -->
+  <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+  
+  <!-- google icons cdn-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!--font awesome cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css" integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CDN CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!-- Bootsrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <!-- AOS CSS CDN-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS JS CDn-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Fancyapp CSS CDN-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+  <!-- Fancy CSS CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  
+  <!-- left sidebar offcanvas -->
+ 
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Jams 'n' Friends</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="text-center">
+       
+<div class="spokesperson">
+<img src="images/general/schedule.1.jpg" class="cropped-offcanvas" alt="spokesperson" />
+</div>
+<br />
+<blockquote>
+It was easy to sign up, can't wait to start!
+<cite>Sam Ronald</cite>
+</blockquote>
+
+<a class="btn btn-outline-primary btn-offcanvas-left" href="https://www.tasteofhome.com/collection/spring-jams-jellies-fruity-spreads/" target="_blank">Jams</a>
+
+
+<a class="btn btn-outline-primary btn-offcanvas-left" href="https://www.marthastewart.com/1128024/basic-jam-recipe" target="_blank">Recipes</a>
+   
+
+<a class="btn btn-outline-primary btn-offcanvas-left" href="https://www.bizapedia.com/il/jam-farms-llc.html" target="_blank">Information</a>
+
+
+<a class="btn btn-outline-primary btn-offcanvas-left" href="https://www.ridemetro.org/Pages/index.aspx" target="_blank">Transportation</a>
+
+
+<a class="btn btn-outline-primary btn-offcanvas-left" href="https://www.nutritionix.com/food/jam" target="_blank">Health</a>
+
+    </div>
+  </div>
+</div>
+  
+  
+  <!-- bottom offcanvas -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Important Notices</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+ 
+<div class="alert alert-danger text-center alert-offcanvas-bottom">
+<p>
+<strong>Existing Participants</strong> We will be closed all holidays
+</p>
+</div>
+
+  </div>
+</div>
+  
+  
+  
+ <div class="container-fluid top-logo text-center">
+   <div class="row">
+     
+     <div class="col-12 col-md-6">
+       
+     <span class="material-icons-outlined md-18 material-icon md-60">
+       <a class="sidebar-icon" data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom">info</a>
+     </span>
+       
+     <span class="material-icons-outlined md-18 material-icon md-60">
+    <a class="sidebar-icon" href="gallery.html">
+      photo_camera
+    </a>
+     </span>
+     
+     <span class="material-icons-outlined md-18 material-icon md-60">
+       <a class="sidebar-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">menu</a>
+     </span>
+       
+     </div>
+       
+     <div class="col-12 col-md-6">  
+          Jam 'n' Friends
+     </div>
+     
+   </div>
+ </div> 
+  
+  
+  <!-- Navigation Menu-->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#staff">Staff</a>
+          </li>
+
+
+          <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="form.html">Volunteer</a>
+              </li>
+
+
+          
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+           
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success btn-search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--end nav-->
+
+  <!-- Carousel-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+   
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="images/carousel/1.jpg" class="d-block w-100" alt="Jam for all" />
+    <div class="carousel-caption d-none d-md-block">
+    <h5>Jam for all</h5>
+    <p>Find the right ingredients for you</p>
+    </div>
+    </div>
+  
+
+    <div class="carousel-item">
+    <img src="images/carousel/2.jpg" class="d-block w-100" alt="The Jam Family" />
+    <div class="carousel-caption d-none d-md-block">
+    <h5>The Jam Family</h5>
+    <p>With over 100 sponsers registered</p>
+    </div>
+    </div>
+
+      <div class="carousel-item">
+        <img src="images/carousel/3.jpg" class="d-block w-100" alt="Categories" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Categories</h5>
+          <p>Choose the flavor that lightens the mood</p>
+        </div>
+      </div>
+    </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    
+    <button class="carousel-control-next" 
+    type="button"
+     data-bs-target="#carouselExampleCaptions" 
+     data-bs-slide="next"
+     >
+   
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="ratio ratio-16x9 carousel-alternate">
+      <iframe 
+      src="https://www.youtube.com/embed/ysEN5RaKOlA?rel=0" 
+      title="YouTube video" 
+      allowfullscreen
+      ></iframe>
+  </div>
+<!--end of carousel-->
+
+
+  <!-- Font Awesome-->
+  <div class="container-fluid fa-row text-center">
+    <div class="row">
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="https://www.marthastewart.com/1128024/basic-jam-recipe" target="_blank">
+      <i class="fas fa-file fa-row-icon"></i>
+      </a> 
+      <br />Ingriedients
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="https://www.nutritionix.com/food/jam" target="_blank">
+      <i class="fas fa-seedling fa-row-icon"></i>
+      </a>
+      <br />Nutrition
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="https://www.bizapedia.com/il/jam-farms-llc.html" target="_blank">
+      <i class="fas fa-clipboard-check fa-row-icon"></i>
+      </a>
+      <br />Resources
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="https://www.ridemetro.org/Pages/index.aspx" target="_blank">
+      <i class="fas fa-bus-alt fa-row-icon"></i>
+      </a>
+      <br />Transportation
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="https://www.activityconnection.com/" target="_blank">
+      <i class="fas fa-baseball fa-row-icon"></i>
+      </a>
+      <br />Activities
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="https://www.reddit.com/" target="_blank">
+      <i class="fas fa-archive fa-row-icon"></i>
+      </a>
+      <br />FAQ
+      
+      </div>
+    </div>
+   </div>
+
+  <!--end of font awesome-->
+
+
+
+
+
+  <!-- dummy paragraph About -->
+  <div class="container volunteer-div google-font">
+    <div class="row">
+      <div class="col">
+
+         <img src="images/general/jam-2-edit.jpg"
+          class="img-fancybox volunteer-img"
+          alt="about-img"
+          />
+         <h2>About</h2>
+  <p>
+    What we offer at Jam 'n' Friends, is first off a community working to
+    to bring you greatest product of Jam that fills your needs. With over 
+    100 sponsers, we are dedicated to find and build your lists of the best 
+    Jams for you.
+  </p>
+
+  <p> 
+    We aren't just a business, we are all family to you. We make sure whatever it is you need that
+    we meet your expectations and maked sure all goes well.
+  </p>
+
+  <p>
+    Jam 'n' Friends is all about coming together as one, we teach one another the benefits 
+    of working together and communicating with each other. We are open 24/7 ready to make
+    appointments or orders. 
+  </p>
+  
+  <p>
+    We offer the best quality of Jam for your snacks or lunch. Making sure all types of Jam
+    we offer are 100% organic and share a health benefit. With over 500 shipments a day, we recieve 
+    all varieties of Jam. Over 1000 products, we ensure that we will meet your expectations. Our jam
+    is made with real fruit and comes straight from our local and nationwide farms. You can provide to
+    all your favorite foods and snacks. Yummy!
+  </p>
+  <p>
+    We are proud to be working with our sponsors making sure we get the highest quality of jams.
+    We were founded in 1985 and continue to build more across the nation. Our goal is to deliver the best
+    quality of Jam's.
+  </p>
+
+  </p>
+          
+  <div>
+   <a href="#footerInfo" class="btn btn-outline-primary btn-about">About</a>
+        </div>
+          
+      </div>
+     </div>
+    </div>
+  <!-- end dummy paragraph about -->
+  
+  
+  
+  <!-- gallery -->
+  <div class="container text-center">
+    <div class="row">
+      
+      <div  
+      class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">
+        <a data-fancybox href="images/fancybox/originals/jelly 1.jpg">
+      <img 
+        data-aos="flip-left"
+        class="img-responsive img-fancybox"
+        src="images/fancybox/thumbs/jelly 1.jpg" 
+        />
+        </a>
+      </div>
+      
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">
+        <a data-fancybox href="images/fancybox/originals/jelly 2.jpg">
+        <img
+         data-aos="flip-left" 
+         class="img-responsive img-fancybox"
+          src="images/fancybox/thumbs/jelly-2.jpg" 
+           />
+        </a>
+          </div>
+        
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">
+        <a data-fancybox href="images/fancybox/originals/jelly 3.jpg">
+        <img
+         data-aos="flip-left" 
+         class="img-responsive img-fancybox"
+          src="images/fancybox/thumbs/jelly-3.jpg" 
+          />
+        </a>
+        </div>
+        
+      <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">
+        <a data-fancybox href="images/fancybox/originals/jelly 4.jpg"> 
+        <img
+         data-aos="flip-left" 
+         class="img-responsive img-fancybox"
+          src="images/fancybox/thumbs/jelly-4.jpg" 
+          />
+        </a>
+        </div>
+    </div>
+  
+  
+  <div class="row gallery-button">
+  <div class="col-12 text-center">
+  <a class="btn btn-outline-primary btn-gallery" href="gallery.html">View Gallery</a>
+      </div>
+    </div>
+  
+   <!--end of gallery-->
+
+
+    <!-- dummy paragraph contact -->
+  <div class="container contact-div google-font">
+    <div class="row">
+      <div class="col">
+         <img src="images/general/jam-edit.jpg"
+         class="img-fancybox contact-img"
+         alt="contact us"
+          />
+        <h2>Contact Information</h2>
+         <p>
+           If you are considering of joining us, you can find  a volunteer buttin below. Everyday
+           we are looking for new memmbers of understanding our true reason of why we do this.
+           We look for the best in the business, those who will take pride in what they do and 
+           making sures that every customer leaves with a positive satisfaction. You choose in what department
+           you most feel comfortable working. If you have any questions, feel free to email us about anything
+           you are concerned of.
+         </p>
+
+         <p>
+           Walk-in appointments and interviews are currently closed due to COVID-19, we ensure to protect
+           one another when it comes to situations like this. At the click of a button below, it will take 
+           you to our form for you to fill in your information. 
+
+         </p>
+
+         <p>
+           We look forward to seeing new faces of the Jam 'n' Friends family, those will asisst for the brand
+           to become better and better each day.
+         </p>
+
+         <p>
+           Most importantly, we at Jam 'n' Friends take pride in what we do. We all work as a team, we don't believe 
+           in individualism. We make sure to meet our customers to their full expecations. We are a local business 
+           but we also offer nation wide service. Join us now!
+         </p>
+  <div>
+   <a href="form.html" class="btn btn-outline-primary btn-volunteer">Volunteer</a>
+  </div>
+          
+      </div>
+     </div>
+    </div>
+  <!-- end dummy paragraph contact -->
+  
+</div>
+  
+  
+  
+  <!-- staff -->
+  <div class="container staff text-center" id="staff">
+    <div class="row">
+      <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+       <img
+       data-aos="fade-up" 
+       src="images/staff/thumbs/jam-1.jpg" class="cropped"  /> 
+        <br />
+        
+        <blockquote>
+         At Jam 'n' Friends, It feels nice here. Working to
+         help one another is something I love.
+
+
+          <cite>Lily</cite>
+        </blockquote>
+
+
+      </div>
+      
+      <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+       <img
+       data-aos="fade-up" 
+       src="images/staff/thumbs/jam-2.jpg"  class="cropped" /> 
+        <br />
+        
+       <blockquote>
+       My favorite part about working here is teaching
+       the new generation about the different types
+       of Jams, it always makes me proud of what I do.
+
+         <cite>Ariana</cite>
+       </blockquote>
+
+
+      </div>
+      
+      <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+       <img
+       data-aos="fade-up" 
+       src="images/staff/thumbs/jam-3.jpg"  class="cropped" /> 
+        <br />
+        
+        <blockquote>
+       Teaching the younger generation always brings
+       joy to my heart, we ensure to them the right way.
+
+
+       <cite>Lily</cite>
+      </blockquote>
+      </div>
+      
+      
+      </div>
+    </div>
+  
+  
+  
+    
+    
+  <!--Footer-->
+  <div class="container-fluid footer-row text-center" id="#footerInfo">
+   <div class="row">
+    <div class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+    <a href="privacy.html">
+      Privacy Policy
+    </a>
+    </div>
+    <div class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+    <a href="schedule.html">
+      Schedule
+    </a>
+    </div>
+    <div class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+     <a href="cm9165033@gmail.com">
+       cm9165033@gmail.com
+     </a>
+    </div>
+    <div class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+     <a href="form.html">
+      Volunteer
+     </a>
+     </div>
+    </div>
+    
+    <hr />
+    
+    <div class="row text-center">
+      <div class="col-12">
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook fa-social-media"></i>
+        </a>
+          <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram fa-social-media"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter fa-social-media"></i>
+          </a>
+        </div>
+      
+    </div>
+   </div> <!-- end container footer row-->
+
+   <script src="js/scripts.js"></script>
+</body>
+
+</html>
